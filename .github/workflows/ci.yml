@@ -1,6 +1,6 @@
 name CI Pipeline
   on:
-   push:
+  push:
     branches:
      -main
     pull_request:
