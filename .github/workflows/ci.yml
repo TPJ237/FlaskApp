@@ -23,6 +23,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt #Make sure to have this file
 
-      - name:Run tests
+      - name: Run tests
         run: |
           pytest #Or any other command to execute your tests
