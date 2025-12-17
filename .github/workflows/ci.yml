@@ -28,6 +28,9 @@ jobs:
           pytest #Or any other command to execute your tests
 
       - name: Login to Docker Hub
+        env:
+          DOCKER_PASSWORD: ${{ secrets.KEY_1998IXE7 }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         run: echo "${{ secrets.KEY_1998IXE7 }}" | docker login -u ${{ secrets.TPJ237 }} --password-stdin
 
       - name: Push image to Docker Hub
